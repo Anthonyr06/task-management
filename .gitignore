@@ -1,0 +1,22 @@
+# env
+.env
+.env.*
+**/.env
+**/.env.*
+
+# node
+**/node_modules/
+**/dist/
+
+# python
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/*.pyc
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

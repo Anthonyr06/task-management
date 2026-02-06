@@ -1,0 +1,49 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Build / artifacts
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+
+# Logs
+*.log
+
+# Local databases / volumes (por si existen)
+*.sqlite3
+data/
+postgres_data/
+
+# Tests output
+test-results/
+reports/
