@@ -26,6 +26,7 @@ services:
       - "8000:8000"
     environment:
       DATABASE_URL: postgresql://postgres:admin@db:5432/mrevolution
+      REDIS_URL: redis://redis:6379/0
       JWT_SECRET: change_me
       JWT_REFRESH_SECRET: change_me_too
       ALLOWED_ORIGINS: http://localhost:5173
