@@ -47,9 +47,8 @@ def delete_webhook(db: Session, webhook: Webhook) -> None:
     db.delete(webhook)
     db.commit()
 
-
-def list_active_for_event(db: Session, project_id: UUID, event: str) -> list[Webhook]:
 # Filtra webhooks que tengan el evento en su lista de suscripción
+def list_active_for_event(db: Session, project_id: UUID, event: str) -> list[Webhook]:
     return (
         db.query(Webhook)
         .filter(
