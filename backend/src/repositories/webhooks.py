@@ -49,7 +49,7 @@ def delete_webhook(db: Session, webhook: Webhook) -> None:
 
 
 def list_active_for_event(db: Session, project_id: UUID, event: str) -> list[Webhook]:
-    # Postgres array contains: SQLAlchemy .any()
+# Filtra webhooks que tengan el evento en su lista de suscripción
     return (
         db.query(Webhook)
         .filter(
